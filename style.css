@@ -92,7 +92,6 @@
 
 .text4 {
     
-    font-size: 2.5em;
     opacity: 0;
     transform: translateY(20px) rotate(10deg) scale(0.8);
     animation: fadeInAndBounce 1s ease forwards 0.5s;
@@ -105,9 +104,8 @@
 
 .text5{
     display: block;
-    padding: 0 2rem;
     animation: show 0.01s forwards, pop-word 1.5s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
     opacity: 0;
     transform: rotateX(120deg);
@@ -117,6 +115,26 @@
 }
 
 
+/* div{
+
+    transform: translate(-50%, -50%);
+} */
+
+
+.text6{
+    display:block;
+    animation: flipper 1.3s cubic-bezier(0.68, -0.55, 0.26, 1.55) both, fadeIn 2s both;
+  }
+  
+@keyframes flipper{
+    from{transform: rotateX(90deg);}
+    to{transform: rotateX(0deg);}
+  }
+  
+  @keyframes fadeIn{
+    from{opacity:0};
+    to{opacity:1};
+  }
 
 @keyframes pop-word {
     to {
